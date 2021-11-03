@@ -11,8 +11,8 @@
   <link href="https://v1.fontapi.ir/css/Vazir:100;400" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body dir="rtl">
-  <section class="hero is-white is-fullheight">
+<body dir="rtl" class="is-clipped">
+  <section class="hero is-fullheight">
     <div class="hero-head">
       <header class="navbar">
         <div class="container">
@@ -30,19 +30,11 @@
           <div id="burger" class="navbar-menu">
             <div class="navbar-start">
               <span class="navbar-item">
-                <a href="https://refused.ir" class="button is-dark is-inverted is-active is-hovered">
+                <a href="https://refused.ir" class="button is-dark is-inverted is-hovered">
                   <span class="icon">
                     <i class="fas fa-home"></i>
                   </span>
                   <span>خانه</span>
-                </a>
-              </span>
-              <span class="navbar-item">
-                <a href="https://github.com/evokelektrique/refused/" class="button is-dark is-inverted">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>گیت هاب</span>
                 </a>
               </span>
 
@@ -52,6 +44,15 @@
                     <i class="fas fa-graduation-cap"></i>
                   </span>
                   <span>آموزش</span>
+                </a>
+              </span>
+
+              <span class="navbar-item">
+                <a href="https://github.com/evokelektrique/refused/" class="button is-dark is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>گیت هاب</span>
                 </a>
               </span>
             </div>
@@ -75,64 +76,76 @@
       <div class="container has-text-centered">
         <div class="box has-background-white">
           <h1 class="title has-text-dark pb-4">
-            Refused
+            حذف تبلیغات و وبگردی سریعتر با Refused
           </h1>
           <p class="subtitle has-text-dark line-height-custom has-text-weight-light">
-            متاسفانه سرویس های تبلیغاتی در ایران بدون اجازه و اختیار کاربران دست به جمع آوری اطلاعات کرده که باعث نقض حریم شخصی کاربران می شود و اگر از دیدن تبلیغات زیاد و آزاد دهنده در سایت های ایرانی خسته شده اید و دنبال یک افزونه برای جلوگیری از مشاهده این تبلیغات میگردید، افزونه Refused گزینه مناسبی برای شما می باشد و جهت دریافت توضیحات بیشتر به <a class="has-text-weight-normal has-text-info" href="https://github.com/evokelektrique/refused/blob/master/README_FA.md" target="_blank">این صفحه</a> مراجعه کنید.
+            اگر از کاربران روزمره اینترنت باشید روزانه با تبلیغات زیادی درگیر هستید. با نصب Refused شما قادر خواهید بود که تبلیغات مزاحم اطراف وبسایت ها را حذف کنید و علاوه بر مشاهده مرتب تر سایت ها، در سرعت بارگذاری و حجم اینترنت خود نیز صرفه جویی کنید.
+          </p>
+        </div>
+        <div class="field has-addons is-justify-content-center py-5">
+          <p class="control">
+            <a href="https://chrome.google.com/webstore/detail/refused/omeglkgaklnjheplmjmmcgodhcnjckdf" class="button is-success" target="_blank">
+              <span class="icon is-small">
+                <i class="fab fa-chrome"></i>
+              </span>
+              <span>دانلود برای کروم</span>
+            </a>
+          </p>
+
+          <p class="control">
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/refused/" class="button is-success" target="_blank">
+              <span class="icon is-small">
+                <i class="fab fa-firefox"></i>
+              </span>
+              <span>دانلود برای فایرفاکس</span>
+            </a>
+          </p>
+
+          <p class="control">
+            <a href="https://github.com/evokelektrique/refused" class="button is-success" target="_blank">
+              <span class="icon is-small">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>گیت هاب</span>
+            </a>
           </p>
         </div>
 
-        <div class="columns is-centered">
+        <div class="columns is-centered mb-5" id="pros-section">
           <div class="column">
             <div class="box">
-              <p class="title is-size-4 pb-4">سرعت</p>
-              <p class="subtitle is-size-6 line-height-custom">افزایش بیش از 50% سرعت در حین مرور سایت های حاوی تبلیغات</p>
+              <p class="title is-size-4 pb-4 has-text-centered-touch">سرعت </p>
+              <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
+                افزایش بصورت میانگین افزونه Refused تا 50 درصد به سرعت بارگذاری صفحات کمک میکند و شما سریع تر از همیشه امکان وب گردی را خواهید داشت
+                <figure class="image">
+                  <img src="https://raw.githubusercontent.com/evokelektrique/refused/master/data/images/charts/chart_seconds_fa.png">
+                </figure>
+              </p>
             </div>
           </div>
           <div class="column">
             <div class="box">
-              <p class="title is-size-4 pb-4">امنیت</p>
-              <p class="subtitle is-size-6 line-height-custom">دیگر نگران فروش اطلاعات خود توسط شرکت های تبلیغاتی نباشید</p>
+              <p class="title is-size-4 pb-4 has-text-centered-touch">امنیت</p>
+              <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
+                در حال حاضر اکثر سایت ها اطلاعات و صفحاتی که در حال گشت  و گذار هستید را ذخیره کرده و به شرکت های تبلیغاتی بدون اجازه و اطلاع کاربر به فروش میرسانند، با نصب افزونه Refused دیگر نگران لو رفتن اطلاعات خود در حین مرور اینترنت نباشید
+                <figure class="image">
+                  <img src="https://github.com/evokelektrique/refused/raw/master/data/images/charts/chart_requests_fa.png?raw=true">
+                </figure>
+              </p>
             </div>
           </div>
           <div class="column">
             <div class="box">
-              <p class="title is-size-4 pb-4">صرفه جویی</p>
-              <p class="subtitle is-size-6 line-height-custom">کاهش مصرف داده تا بیش از 50% را در سایت های حاوی تبلیغات</p>
+              <p class="title is-size-4 pb-4 has-text-centered-touch">صرفه جویی</p>
+              <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
+                بیش از 50 درصد محتوای اکثر وبسایت ها را تبلیغات تشکیل میدهد. شما با نصب Refused میتوانید تا 50 درصد در مصرف اینترنت جلوگیری کنید
+                <figure class="image">
+                  <img src="https://github.com/evokelektrique/refused/raw/master/data/images/charts/chart_data_usage_fa.png?raw=true">
+                </figure>
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="hero-foot">
-      <div class="field has-addons is-justify-content-center mb-4">
-        <p class="control">
-          <a href="https://chrome.google.com/webstore/detail/refused/omeglkgaklnjheplmjmmcgodhcnjckdf" class="button is-success" target="_blank">
-            <span class="icon is-small">
-              <i class="fab fa-chrome"></i>
-            </span>
-            <span>کروم</span>
-          </a>
-        </p>
-
-        <p class="control">
-          <a href="https://addons.mozilla.org/en-US/firefox/addon/refused/" class="button is-success" target="_blank">
-            <span class="icon is-small">
-              <i class="fab fa-firefox"></i>
-            </span>
-            <span>فایرفاکس</span>
-          </a>
-        </p>
-
-        <p class="control">
-          <a href="https://github.com/evokelektrique/refused" class="button is-success" target="_blank">
-            <span class="icon is-small">
-              <i class="fab fa-github"></i>
-            </span>
-            <span>گیت هاب</span>
-          </a>
-        </p>
       </div>
     </div>
   </section>
