@@ -1,24 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Refused - نصب</title>
-   
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <link rel="stylesheet" type="text/css" href="./resources/styles/style.css">
-   <link href="https://v1.fontapi.ir/css/Vazir:100;400" rel="stylesheet">
+  <title>Refused - نصب</title>
+  <meta charset="utf-8">
+  <meta name="description" content="اگر از دیدن تبلیغات زیاد و آزاد دهنده در سایت های ایرانی خسته شده اید و دنبال یک افزونه برای جلوگیری از مشاهده این تبلیغات میگردید، افزونه Refused گزینه مناسبی برای شما می باشد .">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+  <link rel="stylesheet" type="text/css" href="./resources/styles/style.css">
+  <link rel="dns-prefetch" href="https://v1.fontapi.ir/" >
+  <link href="https://v1.fontapi.ir/css/Vazir:100;400" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body dir="rtl">
-   <div id="hero">
-      <img src="./resources/images/96.png" width="96" height="96">
-      <span id="title">افزونه با موفقیت نصب شد، با تشکر از حمایت شما.</span>
-      <div class="buttons">
-         <span>دریافت افزونه :</span>
-         <a id="firefox" href="https://addons.mozilla.org/en-US/firefox/addon/refused/" target="_blank">فایرفاکس</a>
-         <a id="chrome" href="https://chrome.google.com/webstore/detail/refused/omeglkgaklnjheplmjmmcgodhcnjckdf" target="_blank">کروم</a>
-         <a id="github" href="https://github.com/evokelektrique/refused" target="_blank">گیت هاب</a>
+  <section class="hero is-white is-fullheight">
+    <div class="hero-head">
+      <header class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="./resources/images/96.png" alt="Logo">
+            </a>
+            <span class="navbar-burger" data-target="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+
+          <div id="burger" class="navbar-menu">
+            <div class="navbar-start">
+              <span class="navbar-item">
+                <a href="https://refused.ir" class="button is-dark is-inverted">
+                  <span class="icon">
+                    <i class="fas fa-home"></i>
+                  </span>
+                  <span>خانه</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a href="https://github.com/evokelektrique/refused/" class="button is-dark is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>گیت هاب</span>
+                </a>
+              </span>
+
+              <span class="navbar-item">
+                <a href="./tutorial.html" class="button is-dark is-inverted">
+                  <span class="icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </span>
+                  <span>آموزش</span>
+                </a>
+              </span>
+            </div>
+
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a href="https://github.com/evokelektrique/refused-ir" class="button is-dark is-inverted">
+                  <span class="icon">
+                    <i class="fas fa-pen"></i>
+                  </span>
+                  <span>ویرایش صفحه</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="box has-background-white">
+          <h1 class="title has-text-dark has-text-weight-normal py-4">
+            افزونه با موفقیت نصب شد، با تشکر از حمایت شما.
+          </h1>
+        </div>
       </div>
-   </div>
+    </div>
+
+    <div class="hero-foot">
+      <div class="field has-addons is-justify-content-center mb-4">
+        <p class="control">
+          <a href="https://chrome.google.com/webstore/detail/refused/omeglkgaklnjheplmjmmcgodhcnjckdf" class="button is-success" target="_blank">
+            <span class="icon is-small">
+              <i class="fab fa-chrome"></i>
+            </span>
+            <span>کروم</span>
+          </a>
+        </p>
+
+        <p class="control">
+          <a href="https://addons.mozilla.org/en-US/firefox/addon/refused/" class="button is-success" target="_blank">
+            <span class="icon is-small">
+              <i class="fab fa-firefox"></i>
+            </span>
+            <span>فایرفاکس</span>
+          </a>
+        </p>
+
+        <p class="control">
+          <a href="https://github.com/evokelektrique/refused" class="button is-success" target="_blank">
+            <span class="icon is-small">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>گیت هاب</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurgers = Array.from(document.querySelectorAll('.navbar-burger'));
+      console.log(navbarBurgers);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+            const _this = el.dataset.target;
+            const target = document.getElementById(_this);
+            el.classList.toggle('is-active');
+            target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
 </body>
 </html>
