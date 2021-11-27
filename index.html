@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body dir="rtl" class="is-clipped">
-  <section class="hero is-fullheight">
+  <section class="hero is-fullheight is-white">
     <div class="hero-head">
       <header class="navbar">
         <div class="container">
@@ -55,6 +55,15 @@
                   <span>گیت هاب</span>
                 </a>
               </span>
+
+              <span class="navbar-item">
+                <a href="https://github.com/evokelektrique/refused/" class="button is-success is-inverted">
+                  <span class="icon">
+                    <i class="fas fa-download"></i>
+                  </span>
+                  <span>دانلود</span>
+                </a>
+              </span>
             </div>
 
             <div class="navbar-end">
@@ -73,82 +82,136 @@
     </div>
 
     <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="box has-background-white">
-          <h1 class="title has-text-dark pb-4">
-            حذف تبلیغات و وبگردی سریعتر با Refused
+      <div class="columns reverse-columns-touch is-centered is-vcentered">
+        <div class="column is-4 has-text-centered-touch">
+          <img src="./resources/images/extension_on.png" id="hero-image">
+        </div>
+        <div class="column is-8 my-4">
+          <h1 class="title has-text-centered-touch line-height-custom is-size-4 is-size-5-touch has-text-dark pb-4">
+            وبگردی سریعتر  و حذف تبلیغات با افزونه Refused
           </h1>
-          <p class="subtitle has-text-dark line-height-custom has-text-weight-light">
-            اگر از کاربران روزمره اینترنت باشید روزانه با تبلیغات زیادی درگیر هستید. با نصب Refused شما قادر خواهید بود که تبلیغات مزاحم اطراف وبسایت ها را حذف کنید و علاوه بر مشاهده مرتب تر سایت ها، در سرعت بارگذاری و حجم اینترنت خود نیز صرفه جویی کنید.
-          </p>
-        </div>
-        <div class="field has-addons is-justify-content-center py-5">
-          <p class="control">
-            <a href="https://chrome.google.com/webstore/detail/refused/omeglkgaklnjheplmjmmcgodhcnjckdf" class="button is-success" target="_blank">
-              <span class="icon is-small">
-                <i class="fab fa-chrome"></i>
-              </span>
-              <span>دانلود برای کروم</span>
-            </a>
+          <p class="subtitle is-size-6-touch has-text-justified-desktop has-text-centered-touch has-text-dark line-height-custom has-text-weight-light">
+            اگر از کاربران روزمره اینترنت باشید روزانه با تبلیغات زیادی درگیر هستید. با نصب  افزونه Refused شما قادر خواهید بود که تبلیغات مزاحم اطراف وبسایت ها را حذف کنید و علاوه بر مشاهده مرتب تر سایت ها، در سرعت بارگذاری و حجم اینترنت خود نیز صرفه جویی کنید.
           </p>
 
-          <p class="control">
-            <a href="https://addons.mozilla.org/en-US/firefox/addon/refused/" class="button is-success" target="_blank">
-              <span class="icon is-small">
-                <i class="fab fa-firefox"></i>
+          <!-- Download buttons -->
+          <div id="downloads">
+            <a id="download_chrome" class="download_button mx-1 mb-3 is-inline-flex is-flex-direction-column button is-success" target="_blank" href="https://chrome.google.com/webstore/detail/refused/omeglkgaklnjheplmjmmcgodhcnjckdf" >
+              <span class="icon mx-0 mb-2">
+                <i class="fab fa-chrome fa-2x"></i>
               </span>
-              <span>دانلود برای فایرفاکس</span>
+              <span class="has-text-weight-light">کروم</span>
             </a>
-          </p>
-
-          <p class="control">
-            <a href="https://github.com/evokelektrique/refused" class="button is-success" target="_blank">
-              <span class="icon is-small">
-                <i class="fab fa-github"></i>
+            <a id="download_firefox" class="download_button mx-1 mb-3 is-inline-flex is-flex-direction-column button is-success" target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/refused/">
+              <span class="icon mx-0 mb-2">
+                <i class="fab fa-firefox fa-2x"></i>
               </span>
-              <span>گیت هاب</span>
+              <span class="has-text-weight-light">فایرفاکس</span>
             </a>
-          </p>
-        </div>
+            <button class="download_button mx-1 mb-3 is-inline-flex is-flex-direction-column button is-light" disabled="">
+              <span class="icon mx-0 mb-2">
+                <i class="fab fa-edge fa-2x"></i>
+              </span>
+              <span class="has-text-weight-light">ادج (بزودی)</span>
+            </button>
+            <button class="download_button mx-1 mb-3 is-inline-flex is-flex-direction-column button is-light" disabled="">
+              <span class="icon mx-0 mb-2">
+                <i class="fab fa-opera fa-2x"></i>
+              </span>
+              <span class="has-text-weight-light">اپرا (بزودی)</span>
+            </button>
+          </div>
 
-        <div class="columns is-centered mb-5" id="pros-section">
-          <div class="column">
-            <div class="box">
-              <p class="title is-size-4 pb-4 has-text-centered-touch">سرعت </p>
-              <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
-                افزایش بصورت میانگین افزونه Refused تا 50 درصد به سرعت بارگذاری صفحات کمک میکند و شما سریع تر از همیشه امکان وب گردی را خواهید داشت
-                <figure class="image">
-                  <img src="https://raw.githubusercontent.com/evokelektrique/refused/master/data/images/charts/chart_seconds_fa.png">
-                </figure>
-              </p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="box">
-              <p class="title is-size-4 pb-4 has-text-centered-touch">امنیت</p>
-              <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
-                در حال حاضر اکثر سایت ها اطلاعات و صفحاتی که در حال گشت  و گذار هستید را ذخیره کرده و به شرکت های تبلیغاتی بدون اجازه و اطلاع کاربر به فروش میرسانند، با نصب افزونه Refused دیگر نگران لو رفتن اطلاعات خود در حین مرور اینترنت نباشید
-                <figure class="image">
-                  <img src="https://github.com/evokelektrique/refused/raw/master/data/images/charts/chart_requests_fa.png?raw=true">
-                </figure>
-              </p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="box">
-              <p class="title is-size-4 pb-4 has-text-centered-touch">صرفه جویی</p>
-              <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
-                بیش از 50 درصد محتوای اکثر وبسایت ها را تبلیغات تشکیل میدهد. شما با نصب Refused میتوانید تا 50 درصد در مصرف اینترنت جلوگیری کنید
-                <figure class="image">
-                  <img src="https://github.com/evokelektrique/refused/raw/master/data/images/charts/chart_data_usage_fa.png?raw=true">
-                </figure>
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Zig zag features -->
+
+  <!-- 1 -->
+  <div class="container">
+    <section class="section">
+      <div class="columns reverse-columns-touch is-vcentered">
+        <div class="column">
+          <div class="box">
+            <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
+              <figure class="image">
+                <img src="https://raw.githubusercontent.com/evokelektrique/refused/master/data/images/charts/chart_seconds_fa.png">
+              </figure>
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <p class="title is-size-4 is-size-5-touch pb-4 has-text-centered-touch mb-4">سرعت </p>
+          <p class="subtitle is-size-6-touch line-height-custom has-text-weight-light has-text-justified-desktop has-text-centered-touch">افزایش بصورت میانگین افزونه Refused تا 50 درصد به سرعت بارگذاری صفحات کمک میکند و شما سریع تر از همیشه امکان وب گردی را خواهید داشت</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 2 -->
+  <div class="container">
+    <section class="section">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <p class="title is-size-4 is-size-5-touch pb-4 has-text-centered-touch mb-4">امنیت</p>
+          <p class="subtitle is-size-6-touch line-height-custom has-text-weight-light has-text-justified-desktop has-text-centered-touch">افزونه Refused با افزایش چشم گیر و بصورت میانگین تا 50 درصد در بارگذاری صفحات کمک می کند و شما سریع تر از همیشه امکان وب گردی را خواهید داشت</p>
+        </div>
+        <div class="column">
+          <div class="box">
+            <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
+              <figure class="image">
+                <img src="https://github.com/evokelektrique/refused/raw/master/data/images/charts/chart_requests_fa.png?raw=true">
+              </figure>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 3 -->
+  <div class="container">
+    <section class="section">
+      <div class="columns reverse-columns-touch is-vcentered">
+        <div class="column">
+          <div class="box">
+            <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
+              <figure class="image">
+                <img src="https://github.com/evokelektrique/refused/raw/master/data/images/charts/chart_data_usage_fa.png?raw=true">
+              </figure>
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <p class="title is-size-4 is-size-5-touch pb-4 has-text-centered-touch mb-4">صرفه جویی</p>
+          <p class="subtitle is-size-6-touch line-height-custom has-text-weight-light has-text-justified-desktop has-text-centered-touch">بیش از نیمی از محتوای اکثر وبسایت ها را تبلیغات تشکیل میدهد. شما با نصب افزونه Refused میتوانید تا 50 درصد در مصرف اینترنت جلوگیری کنید</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer has-text-centered py-5 has-text-dark">
+
+    <nav class="level">
+      <p class="level-item has-text-centered">
+        <a class="link is-info">خانه</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info">دانلود</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <img src="./resources/images/96.png" alt="Logo" width="60px">
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info">آموزش</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info">GitHub</a>
+      </p>
+    </nav>
+  </footer>
 
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', () => {
