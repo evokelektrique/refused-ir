@@ -11,14 +11,14 @@
   <link href="https://v1.fontapi.ir/css/Vazir:100;400" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body dir="rtl">
-  <section class="hero is-white is-fullheight">
+<body dir="rtl" class="is-clipped">
+  <section class="hero is-fullheight is-white">
     <div class="hero-head">
       <header class="navbar">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item">
-              <img src="./resources/images/96.png" alt="Logo">
+              <img src="/resources/images/96.png" alt="Logo">
             </a>
             <span class="navbar-burger" data-target="burger">
               <span></span>
@@ -30,7 +30,7 @@
           <div id="burger" class="navbar-menu">
             <div class="navbar-start">
               <span class="navbar-item">
-                <a href="https://refused.ir" class="button is-dark is-inverted">
+                <a href="/" class="button is-dark is-inverted">
                   <span class="icon">
                     <i class="fas fa-home"></i>
                   </span>
@@ -55,6 +55,15 @@
                   <span>گیت هاب</span>
                 </a>
               </span>
+
+              <span class="navbar-item">
+                <a href="/downloads.html" class="button is-success is-inverted">
+                  <span class="icon">
+                    <i class="fas fa-download"></i>
+                  </span>
+                  <span>دانلود</span>
+                </a>
+              </span>
             </div>
 
             <div class="navbar-end">
@@ -71,6 +80,7 @@
         </div>
       </header>
     </div>
+
 
     <div class="hero-body">
       <div class="container has-text-centered">
@@ -113,6 +123,26 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer has-text-centered py-5 has-text-dark">
+    <nav class="level">
+      <p class="level-item has-text-centered">
+        <a href="/" class="link is-info">خانه</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a href="/downloads.html" class="link is-info">دانلود</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <img src="/resources/images/96.png" alt="Logo" width="60px">
+      </p>
+      <p class="level-item has-text-centered">
+        <a href="/tutorial.html" class="link is-info">آموزش</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a href="https://github.com/evokelektrique/refused/" class="link is-info">GitHub</a>
+      </p>
+    </nav>
+  </footer>
 
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', () => {
