@@ -33,6 +33,10 @@ body,button { font-family: 'Vazir', sans-serif }
   background: linear-gradient(to top right, #D9DC0A, #0BDAD8);
 }
 
+.chart_tooltip {
+  padding: 5px 10px;
+  font-weight: bold;
+}
 
 @media (max-width: 1024px) {
   #downloads {

@@ -6,10 +6,12 @@
   <meta name="description" content="اگر از دیدن تبلیغات زیاد و آزاد دهنده در سایت های ایرانی خسته شده اید و دنبال یک افزونه برای جلوگیری از مشاهده این تبلیغات میگردید، افزونه Refused گزینه مناسبی برای شما می باشد .">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
-  <link rel="stylesheet" type="text/css" href="/resources/styles/style.css">
+  <link rel="stylesheet" type="text/css" href="/resources/styles/app.css">
   <link rel="dns-prefetch" href="https://v1.fontapi.ir/" >
   <link href="https://v1.fontapi.ir/css/Vazir:100;400" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer=""></script>
+  <script type="text/javascript" src="/resources/scripts/app.js" defer=""></script>
 </head>
 <body dir="rtl" class="is-clipped">
   <section class="hero is-fullheight is-white">
@@ -83,7 +85,7 @@
 
     <div class="hero-body">
       <div class="columns reverse-columns-touch is-centered is-vcentered">
-        <div class="column is-4 has-text-centered-touch">
+        <div class="column is-4 has-text-centered">
           <img src="/resources/images/extension_on.png" id="hero-image">
         </div>
         <div class="column is-8 my-4">
@@ -136,15 +138,13 @@
         <div class="column">
           <div class="box">
             <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
-              <figure class="image">
-                <img src="https://raw.githubusercontent.com/evokelektrique/refused/master/data/images/charts/chart_seconds_fa.png">
-              </figure>
+              <div id="chart-1"></div>
             </p>
           </div>
         </div>
         <div class="column">
           <p class="title is-size-4 is-size-5-touch pb-4 has-text-centered-touch mb-4">سرعت </p>
-          <p class="subtitle is-size-6-touch line-height-custom has-text-weight-light has-text-justified-desktop has-text-centered-touch">افزایش بصورت میانگین افزونه Refused تا 50 درصد به سرعت بارگذاری صفحات کمک میکند و شما سریع تر از همیشه امکان وب گردی را خواهید داشت</p>
+          <p class="subtitle is-size-6-touch line-height-custom has-text-weight-light has-text-justified-desktop has-text-centered-touch">افزونه Refused با افزایش چشم گیر و بصورت میانگین تا 50 درصد در بارگذاری صفحات کمک می کند و شما سریع تر از همیشه امکان وب گردی را خواهید داشت</p>
         </div>
       </div>
     </section>
@@ -156,14 +156,12 @@
       <div class="columns is-vcentered">
         <div class="column">
           <p class="title is-size-4 is-size-5-touch pb-4 has-text-centered-touch mb-4">امنیت</p>
-          <p class="subtitle is-size-6-touch line-height-custom has-text-weight-light has-text-justified-desktop has-text-centered-touch">افزونه Refused با افزایش چشم گیر و بصورت میانگین تا 50 درصد در بارگذاری صفحات کمک می کند و شما سریع تر از همیشه امکان وب گردی را خواهید داشت</p>
+          <p class="subtitle is-size-6-touch line-height-custom has-text-weight-light has-text-justified-desktop has-text-centered-touch">امروزه سرویس های تبلیغاتی بدون اجازه انجام به جمع آوری و فروش اطلاعات کاربران اقدام کرده و با نصب افزونه Refused دیگر نگران  فروش اطلاعات خود نخواهید بود</p>
         </div>
         <div class="column">
           <div class="box">
             <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
-              <figure class="image">
-                <img src="https://github.com/evokelektrique/refused/raw/master/data/images/charts/chart_requests_fa.png?raw=true">
-              </figure>
+              <div id="chart-2"></div>
             </p>
           </div>
         </div>
@@ -178,9 +176,7 @@
         <div class="column">
           <div class="box">
             <p class="subtitle is-size-6 line-height-custom has-text-centered-touch has-text-right-desktop">
-              <figure class="image">
-                <img src="https://github.com/evokelektrique/refused/raw/master/data/images/charts/chart_data_usage_fa.png?raw=true">
-              </figure>
+              <div id="chart-3"></div>
             </p>
           </div>
         </div>
@@ -215,7 +211,6 @@
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', () => {
       const navbarBurgers = Array.from(document.querySelectorAll('.navbar-burger'));
-      console.log(navbarBurgers);
       if (navbarBurgers.length > 0) {
         navbarBurgers.forEach( el => {
           el.addEventListener('click', () => {
