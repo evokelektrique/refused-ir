@@ -124,8 +124,8 @@ function draw_chart(element_id, locale_tag, locale_data, data) {
         {data: [89, 44]}
       ],
       categories: [
-        ['فعال'],
         ['غیر فعال'],
+        ['فعال'],
       ],
       tag: "درخواست"
     },
@@ -136,8 +136,8 @@ function draw_chart(element_id, locale_tag, locale_data, data) {
         {data: [2.2, 1]}
       ],
       categories: [
-        ['فعال'],
         ['غیر فعال'],
+        ['فعال'],
       ],
       tag: "مگابایت"
     },
